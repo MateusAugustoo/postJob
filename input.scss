@@ -256,8 +256,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
 
-    div {
+    padding: 2.5rem;
+
+    .container-slogan-section2 {
       width: 26.25rem;
       height: 14.3rem;
 
@@ -280,6 +283,12 @@ main {
         border: 1px solid $green-400;
         color: $white;
       }
+    }
+
+    .container-cards-section2 {
+      display: grid;
+      grid-template-columns: repeat(3, 22rem);
+      gap: 2rem;
     }
   }
 }
