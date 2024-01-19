@@ -29,6 +29,20 @@ header {
   padding: 4rem 6.5rem 1rem;
 }
 
+.title-description-button {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: start;
+
+  width: 28rem;
+
+  .title,
+  .description {
+    text-align: left;
+  }
+}
+
 .title {
   text-align: center;
   font-size: 3rem;
@@ -303,25 +317,33 @@ button {
     column-gap: 5rem;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+  }
+}
+
+.section-resume-design {
+  background: $black;
+  padding-block: 2.5rem;
+
+  .section-resume-design-content {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
 
     .title-description-button {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      align-items: start;
+      .title {
+        color: $white;
+      }
 
-      width: 28rem;
-
-      .title,
       .description {
-        text-align: left;
+        color: $neutra-400;
       }
 
       button {
         background-color: transparent;
-        font-weight: 600;
-
-        border: 1px solid $black;
+        border: 1px solid $green-400;
+        color: $white;
       }
     }
   }
